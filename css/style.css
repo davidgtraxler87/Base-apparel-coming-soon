@@ -1,0 +1,166 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap");
+
+:root {
+  --desatRed: #ce9797;
+  --softRed: #f96262;
+  --grayRed: #413a3a;
+  --white: #ffffff;
+  --gradient-bg: linear-gradient(135deg, #ffffff, #fff5f5);
+  --gradient-btn: linear-gradient(135deg, #f8bfbf, #ee8c8c);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 1rem;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.container {
+  display: flex;
+}
+
+.bg-container {
+  background: linear-gradient(135deg, #ffffff, #fff5f5);
+  height: 100vh;
+}
+
+.flex-container {
+  background: url(../images/bg-pattern-desktop.svg) no-repeat center
+    center/cover;
+  width: 1050px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.logo {
+  margin-top: 4rem;
+  margin-left: 300px;
+  margin-bottom: 6.5rem;
+}
+
+.apparel-info {
+  margin-left: 300px;
+}
+
+.apparel-info .l-heading {
+  font-size: 4rem;
+  text-transform: uppercase;
+  letter-spacing: 14px;
+  color: var(--grayRed);
+  font-weight: 600;
+  line-height: 1.05;
+  margin-top: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.l-heading .diff-text {
+  font-weight: 300;
+  color: var(--desatRed);
+}
+
+.apparel-info .s-heading {
+  color: var(--desatRed);
+  line-height: 2;
+}
+
+#form .form-control {
+  margin-left: 300px;
+  margin-top: 1.75rem;
+}
+
+.form-control input[type="email"] {
+  position: relative;
+  border-radius: 50px;
+  border: 2px solid var(--desatRed);
+  opacity: 0.4;
+  padding: 17px;
+  text-indent: 9px;
+  width: 60%;
+}
+
+.form-control input[type="email"]:focus {
+  outline-style: none;
+}
+
+::placeholder {
+  color: var(--desatRed);
+}
+
+.message {
+  position: absolute;
+  margin-left: -26.4rem;
+  margin-top: 4rem;
+  color: var(--softRed);
+  letter-spacing: 0.5px;
+  visibility: hidden;
+}
+
+.error-icon {
+  position: absolute;
+  margin-left: -8rem;
+  margin-top: 0.8rem;
+  visibility: hidden;
+}
+
+.form-control.error img {
+  visibility: visible;
+}
+
+.form-control.error small {
+  visibility: visible;
+  color: var(--softRed);
+}
+
+.form-control.success small {
+  visibility: visible;
+  color: #2ecc71;
+}
+
+.form-control.success input {
+  border: 2px solid #2ecc71;
+}
+
+.form-control.error input {
+  border: 2px solid var(--softRed);
+}
+
+#form .btn-primary {
+  position: absolute;
+  background: var(--gradient-btn);
+  border-radius: 50px;
+  border: none;
+  width: 5.7rem;
+  height: 3.25rem;
+  margin-left: 41.3rem;
+  margin-top: -3.25rem;
+  z-index: 1;
+}
+
+#form .btn-primary:hover {
+  background: #ffcdc2;
+  cursor: pointer;
+}
+
+#form .btn-primary:focus {
+  outline-style: none;
+}
+
+.apparel-img img {
+  width: 696px;
+  height: 100vh;
+}
+
+.attribution {
+  margin-top: -1.25rem;
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
